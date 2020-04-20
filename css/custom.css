@@ -1,8 +1,21 @@
-/* 
+/*
 
 1. Add your custom Css styles below
-2. Place the this code in your template: 
+2. Place the this code in your template:
 
  <link href="css/custom.css" rel="stylesheet">
 
 */
+.rainbow-text {
+  background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 8s ease infinite;
+}
+
+@keyframes rainbow {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
