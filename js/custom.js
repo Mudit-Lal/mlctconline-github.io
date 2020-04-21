@@ -7,5 +7,5 @@
 
 */
     document.getElementById("GST").onclick = function () {
-        location.href = "gst/gst_begin.html";
+        location.href = "gst_begin.html";
     };
