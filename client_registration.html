@@ -102,6 +102,8 @@
                               <p class="text-muted">Enter your details precisely and carefully.</p> </center>
                           </div>
                           <div class="card-body">
+                            <script type="text/javascript">var submitted=false;</script>
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='client_reg_success.html';}"></iframe>
                               <form name="client_registration" id="form1" class="form-validate" onsubmit="return clientvalidateform()" novalidate="novalidate" action="https://docs.google.com/forms/u/6/d/e/1FAIpQLSf1hNFYc1LZmopMWMQkZuQSsuO7JqHPxGDAV8yndOk50i3G2A/formResponse">
                                   <div class="form-row">
                                       <div class="form-group col-md-6">
@@ -110,69 +112,54 @@
                                       </div>
                                       <div class="form-group col-md-6">
                                           <label for="surname">Father's Name</label>
-                                          <input type="text" class="form-control" name="surname" placeholder="Enter your Father's Name" required="">
-                                      </div>
-                                  </div>
-                                  <div class="form-row">
-
-                                    <div class="form-group col-md-6">
-                                        <label for="dob">Date of Birth</label>
-                                        <input class="form-control" type="date" name="dateofbirth" required="">
-                                    </div>
-                                      <div class="form-group col-md-6">
-                                          <label for="gender">Click on me to select</label>
-                                          <select class="form-control" name="orgtype" required="">
-                                              <option value="">Organisation Type</option>
-                                              <option>Individual / Proprietor</option>
-                                              <option>Partnership Firm</option>
-                                              <option>Company/LLP/Pvt. Ltd./Public Ltd.</option>
-                                          </select>
+                                          <input type="text" class="form-control" name="entry.1034887896" placeholder="Enter your Father's Name" required="">
                                       </div>
                                   </div>
                                   <div class="form-row">
                                       <div class="form-group col-md-6">
                                           <label for="telephone">Phone Number</label>
-                                          <input class="form-control" type="tel" name="telephone" placeholder="Enter your Telephone number" required="">
+                                          <input class="form-control" type="tel" name="entry.1166974658" placeholder="Enter your Telephone number" required="">
                                       </div>
                                       <div class="form-group col-md-6">
                                           <label for="gender">Email Addres</label>
-                                          <input class="form-control" type="email" name="email" placeholder="Enter your Email"required>
+                                          <input class="form-control" type="email" name="entry.1045781291" placeholder="Enter your Email"required>
                                       </div>
                                   </div>
-                                  <div class="h5 mb-4">Residential Address</div>
                                   <div class="form-row">
                                       <div class="form-group col-md-6">
-                                          <label for="address">Address</label>
-                                          <input type="text" class="form-control" name="address" placeholder="Enter your Street Address" required="">
+                                          <label for="address">Residential Address</label>
+                                          <input type="text" class="form-control" name="entry.1065046570" placeholder="Enter your Street Address" required="">
                                       </div>
-                                  </div>
-                                  <div class="form-row">
                                       <div class="form-group col-md-6">
                                           <label for="city">City</label>
-                                          <input type="text" class="form-control" name="city" placeholder="Enter your City" required="">
+                                          <input type="text" class="form-control" name="entry.809291950" placeholder="Enter your City" required="">
                                       </div>
-                                      <div class="form-group col-md-6">
-                                          <label>Zip Code:</label>
-                                          <input type="number" class="form-control" name="zip" placeholder="Enter Zip Code" required="">
-                                      </div>
-                                  </div>
                                   <div class="h5 mb-4">Organisation Details</div>
                                   <div class="form-row">
                                     <div class="form-group col-md-6">
+                                        <label for="gender">Click on me to select</label>
+                                        <select class="form-control" name="entry.2138931607" required="">
+                                            <option value="">Organisation Type</option>
+                                            <option>Individual / Proprietor</option>
+                                            <option>Partnership Firm</option>
+                                            <option>Company/LLP/Pvt. Ltd./Public Ltd.</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
                                         <label for="name">Firm Name / Shop Name / Company Name</label>
-                                        <input type="text" class="form-control" name="fname" placeholder="Enter the Firm Name / Shop Name / Company Name" required="">
+                                        <input type="text" class="form-control" name="entry.974901662" placeholder="Enter the Firm Name / Shop Name / Company Name" required="">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="address">Business / Profession / Service</label>
-                                        <input type="text" class="form-control" name="bpsname" placeholder="Enter details here" required="">
+                                        <input type="text" class="form-control" name="entry.2076835508" placeholder="Enter details here" required="">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="address">Current/Savings Account Number</label>
-                                        <input type="text" class="form-control" name="accnumber" placeholder="Enter Account Number" required="">
+                                        <input type="text" class="form-control" name="entry.243576081" placeholder="Enter Account Number" required="">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="address">PAN Number ? ID Proof number</label>
-                                        <input type="text" class="form-control" name="accnumber" placeholder="Enter ID Number here" required="">
+                                        <input type="text" class="form-control" name="entry.839337160" placeholder="Enter ID Number here" required="">
                                     </div>
 
                                       <div class="form-group col-md-6">
@@ -181,17 +168,13 @@
                                               <option value="">India</option>
                                           </select>
                                       </div>
+                                      </div>
                                   </div>
                                   <div class="form-group">
                                       <div class="custom-control custom-checkbox">
                                           <input type="checkbox" name="terms_conditions" id="terms_conditions" class="custom-control-input" value="1" required="">
                                           <label class="custom-control-label" for="terms_conditions">By checking this option, you agree to accept the <a href="#">Terms and Conditions</a>.</label>
                                       </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label class="form-label w-100">File input</label>
-                                      <input type="file">
-                                      <small class="form-text text-muted">Example block-level help text here.</small>
                                   </div>
                                   <div class="g-recaptcha" data-sitekey="6LdoTOwUAAAAAPoidMXWGt3raE9z8p0qv4R9O1K4"></div>
                                   <button type="submit" value="Submit" class="btn m-t-30 mt-3">Submit</button>
