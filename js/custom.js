@@ -38,3 +38,9 @@
         return false;
       }
     }
+
+    function recaptcha() {
+      var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+    }
