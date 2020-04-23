@@ -102,11 +102,11 @@
                               <p class="text-muted">Enter your details precisely and carefully.</p> </center>
                           </div>
                           <div class="card-body">
-                              <form id="form1" class="form-validate" novalidate="novalidate" action="include/contact-form.php">
+                              <form name="client_registration" id="form1" class="form-validate" onsubmit="return clientvalidateform()" novalidate="novalidate" action="https://docs.google.com/forms/u/6/d/e/1FAIpQLSf1hNFYc1LZmopMWMQkZuQSsuO7JqHPxGDAV8yndOk50i3G2A/formResponse">
                                   <div class="form-row">
                                       <div class="form-group col-md-6">
                                           <label for="name">Full Name</label>
-                                          <input type="text" class="form-control" name="name" placeholder="Enter your Full Name" required="">
+                                          <input type="text" class="form-control" name="entry.2005620554" placeholder="Enter your Full Name" required="">
                                       </div>
                                       <div class="form-group col-md-6">
                                           <label for="surname">Father's Name</label>
@@ -182,12 +182,6 @@
                                           </select>
                                       </div>
                                   </div>
-                                  <div class="form-group mb-1 mt-5">
-                                      <div class="custom-control custom-checkbox">
-                                          <input type="checkbox" name="reminders" id="reminders" class="custom-control-input" value="1" required="">
-                                          <label class="custom-control-label" for="reminders">Send me occasional reminders about these settings</label>
-                                      </div>
-                                  </div>
                                   <div class="form-group">
                                       <div class="custom-control custom-checkbox">
                                           <input type="checkbox" name="terms_conditions" id="terms_conditions" class="custom-control-input" value="1" required="">
@@ -200,7 +194,7 @@
                                       <small class="form-text text-muted">Example block-level help text here.</small>
                                   </div>
                                   <div class="g-recaptcha" data-sitekey="6LdoTOwUAAAAAPoidMXWGt3raE9z8p0qv4R9O1K4"></div>
-                                  <button type="submit" class="btn m-t-30 mt-3">Submit</button>
+                                  <button type="submit" value="Submit" class="btn m-t-30 mt-3">Submit</button>
                               </form>
                           </div>
                       </div>

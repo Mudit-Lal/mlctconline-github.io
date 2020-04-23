@@ -30,3 +30,11 @@
     document.getElementById("CA").onclick = function () {
         location.href = "page-under-construction.html";
     };
+
+    function clientvalidateForm() {
+      var x = document.forms["client_registration"]["name"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+    }
