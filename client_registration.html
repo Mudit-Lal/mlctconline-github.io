@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Mudit Lal" />
+  <meta name="description" content="Same MLCTC but, online and smarter">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Document title -->
+  <title>Client Registration | MLCTC Online</title>
+  <!-- Stylesheets & Fonts -->
+  <link href="css/plugins.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/theme.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Body Inner -->
+    <div class="body-inner">
+        <!-- Header -->
+        <header id="header" data-transparent="true" data-fullwidth="true" class="dark submenu-light">
+            <div class="header-inner">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo">
+                        <a href="index.html">
+                            <span class="logo-default">MLCTC</span>
+                            <span class="logo-dark">MLCTC</span>
+                        </a>
+                    </div>
+                    <!--End: Logo-->
+                    <!-- Search -->
+                    <div id="search"><a id="btn-search-close" class="btn-search-close" aria-label="Close search form"><i class="icon-x"></i></a>
+                        <form class="search-form" action="search-results-page.html" method="get">
+                            <input class="form-control" name="q" type="text" placeholder="Type & Search..." />
+                            <span class="text-muted">Start typing & press "Enter" or "ESC" to close</span>
+                        </form>
+                    </div>
+                    <!-- end: search -->
+                    <!--Header Extras-->
+                    <div class="header-extras">
+                        <ul>
+                            <li>
+                                <a id="btn-search" href="#"> <i class="icon-search"></i></a>
+                            </li>
+                            <li>
+                                <div class="p-dropdown">
+                                    <a href="#"><i class="icon-globe"></i><span>EN</span></a>
+                                    <ul class="p-dropdown-content">
+                                        <li><a href="#">French</a></li>
+                                        <li><a href="#">Spanish</a></li>
+                                        <li><a href="#">English</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end: Header Extras-->
+
+                </div>
+            </div>
+        </header>
+        <!-- end: Header -->
+        <!-- Page title -->
+        <section id="page-title" data-bg-parallax="images/parallax/client_registration.jpg">
+            <div class="container">
+                <div class="page-title">
+                    <h1><b>New Client Registration</b></h1>
+                    <span>Registering as new client at MLCTC</span>
+                </div>
+            </div>
+        </section>
+        <!-- end: Page title -->
+        <!-- Section -->
+        <section>
+            <div class="container">
+                <div class="row">
+                  <div class="content col-lg-12">
+                      <div class="card">
+                          <div class="card-header">
+                            <center>  <span class="h4">Individual Details</span>
+                              <p class="text-muted">Enter your details precisely and carefully.</p> </center>
+                          </div>
+                          <div class="card-body">
+                              <form id="form1" class="form-validate" novalidate="novalidate" action="include/contact-form.php">
+                                  <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                          <label for="name">Full Name</label>
+                                          <input type="text" class="form-control" name="name" placeholder="Enter your Full Name" required="">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                          <label for="surname">Father's Name</label>
+                                          <input type="text" class="form-control" name="surname" placeholder="Enter your Father's Name" required="">
+                                      </div>
+                                  </div>
+                                  <div class="form-row">
+
+                                    <div class="form-group col-md-6">
+                                        <label for="dob">Date of Birth</label>
+                                        <input class="form-control" type="date" name="dateofbirth" required="">
+                                    </div>
+                                      <div class="form-group col-md-6">
+                                          <label for="gender">Gender</label>
+                                          <select class="form-control" name="gender" required="">
+                                              <option value="">Select your gender</option>
+                                              <option>Female</option>
+                                              <option>Male</option>
+                                              <option>Rather not say</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                          <label for="telephone">Telephone</label>
+                                          <input class="form-control" type="tel" name="telephone" placeholder="Enter your Telephone number" required="">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                          <label for="gender">Email Addres</label>
+                                          <input class="form-control" type="email" name="email" placeholder="Enter your Email"required>
+                                      </div>
+                                  </div>
+                                  <div class="h5 mb-4">Mailing Address</div>
+                                  <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                          <label for="address">Address</label>
+                                          <input type="text" class="form-control" name="address" placeholder="Enter your Street Address" required="">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                          <label for="address2">Address 2</label>
+                                          <input type="text" class="form-control" name="address2" placeholder="Enter your Apartment, studio, or floor" required="">
+                                      </div>
+                                  </div>
+                                  <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                          <label for="city">City</label>
+                                          <input type="text" class="form-control" name="city" placeholder="Enter your City" required="">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                          <label>Zip Code:</label>
+                                          <input type="number" class="form-control" name="zip" placeholder="Enter Zip Code" required="">
+                                      </div>
+                                  </div>
+                                  <div class="form-row">
+                                      <div class="form-group col-md-6">
+                                          <label for="state">State</label>
+                                          <select name="state" class="form-control" required="">
+                                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                            <option value="Assam">Assam</option>
+                                            <option value="Bihar">Bihar</option>
+                                            <option value="Chandigarh">Chandigarh</option>
+                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                            <option value="Daman and Diu">Daman and Diu</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Lakshadweep">Lakshadweep</option>
+                                            <option value="Puducherry">Puducherry</option>
+                                            <option value="Goa">Goa</option>
+                                            <option value="Gujarat">Gujarat</option>
+                                            <option value="Haryana">Haryana</option>
+                                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                            <option value="Jharkhand">Jharkhand</option>
+                                            <option value="Karnataka">Karnataka</option>
+                                            <option value="Kerala">Kerala</option>
+                                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                            <option value="Maharashtra">Maharashtra</option>
+                                            <option value="Manipur">Manipur</option>
+                                            <option value="Meghalaya">Meghalaya</option>
+                                            <option value="Mizoram">Mizoram</option>
+                                            <option value="Nagaland">Nagaland</option>
+                                            <option value="Odisha">Odisha</option>
+                                            <option value="Punjab">Punjab</option>
+                                            <option value="Rajasthan">Rajasthan</option>
+                                            <option value="Sikkim">Sikkim</option>
+                                            <option value="Tamil Nadu">Tamil Nadu</option>
+                                            <option value="Telangana">Telangana</option>
+                                            <option value="Tripura">Tripura</option>
+                                            <option value="Uttar Pradesh" selected>Uttar Pradesh</option>
+                                            <option value="Uttarakhand">Uttarakhand</option>
+                                            <option value="West Bengal">West Bengal</option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                          <label for="country">Country</label>
+                                          <select name="country" class="form-control" readonly>
+                                              <option value="">India</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="form-group mb-1 mt-5">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" name="reminders" id="reminders" class="custom-control-input" value="1" required="">
+                                          <label class="custom-control-label" for="reminders">Send me occasional
+                                              reminders
+                                              about these settings</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" name="terms_conditions" id="terms_conditions" class="custom-control-input" value="1" required="">
+                                          <label class="custom-control-label" for="terms_conditions">By checking
+                                              this
+                                              option, you agree to acceot with the <a href="#">Terms and
+                                                  Conditions</a>.</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="form-label w-100">File input</label>
+                                      <input type="file">
+                                      <small class="form-text text-muted">Example block-level help text here.</small>
+                                  </div>
+                                  <div class="g-recaptcha" data-sitekey="6LdoTOwUAAAAAPoidMXWGt3raE9z8p0qv4R9O1K4"></div>
+                                  <button type="submit" class="btn m-t-30 mt-3">Submit</button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: Section -->
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="container">
+                </div>
+            </div>
+            <div class="copyright-content">
+                <div class="container">
+                    <div class="copyright-text text-center">&copy; 2020 M.Lall Commercial Tax Consultants All rights reserved.<br>This website is made with <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> by <a href="https://mudit-lal.github.io/mudit.github.io" target="_blank" class="rainbow-text">Mudit Lal</a> </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end: Footer -->
+    </div> <!-- end: Body Inner -->
+    <!-- Scroll top -->
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+    <!--Plugins-->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+    <!--Template functions-->
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
