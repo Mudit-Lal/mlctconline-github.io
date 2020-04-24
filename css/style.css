@@ -17128,6 +17128,17 @@ a.list-group-item.active:hover, a.list-group-item.active.active {
 .call-to-action.call-to-action-dark {
   background-color: #1f1f1f;
 }
+
+.call-to-action.call-to-action-gradient
+{
+  -webkit-fill-color: transparent !important;
+  background: radial-gradient(circle at left top, #136967 9%, #033d63 48%, #00131e 91%);
+}
+
+.call-to-action.call-to-action-gradient h3,
+.call-to-action.call-to-action-gradient p {
+  color: #ffffff;
+}
 .call-to-action.call-to-action-dark h3,
 .call-to-action.call-to-action-dark p {
   color: #ffffff;
