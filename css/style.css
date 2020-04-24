@@ -4359,6 +4359,17 @@ h6.font-parisienne {
   flex-wrap: wrap;
   min-height: 100vh;
 }
+.fullscreenreg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
 .fullscreen .container,
 .fullscreen .container-wide {
   -ms-flex-preferred-size: 0;
@@ -17138,6 +17149,8 @@ a.list-group-item.active:hover, a.list-group-item.active.active {
 .call-to-action.call-to-action-gradient h3,
 .call-to-action.call-to-action-gradient p {
   color: #ffffff;
+  text-align: center;
+
 }
 .call-to-action.call-to-action-dark h3,
 .call-to-action.call-to-action-dark p {
