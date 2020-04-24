@@ -6,6 +6,9 @@
 
 
 */
+    document.getElementById("goback").onclick = function () {
+        location.href = "index.html";
+    };
     document.getElementById("register").onclick = function () {
         location.href = "client_registration.html";
     };
