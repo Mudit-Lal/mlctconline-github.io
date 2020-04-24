@@ -6,6 +6,9 @@
 
 
 */
+    document.getElementById("register").onclick = function () {
+        location.href = "client_registration.html";
+    };
     document.getElementById("GST").onclick = function () {
         location.href = "gst_begin.html";
     };
