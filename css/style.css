@@ -4369,6 +4369,13 @@ h6.font-parisienne {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   min-height: 100vh;
+  position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
 }
 .fullscreen .container,
 .fullscreen .container-wide {

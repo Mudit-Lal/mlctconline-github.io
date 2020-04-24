@@ -6,9 +6,7 @@
 
 
 */
-    document.getElementById("goback").onclick = function () {
-        location.href = "index.html";
-    };
+
     document.getElementById("register").onclick = function () {
         location.href = "client_registration.html";
     };
@@ -34,6 +32,9 @@
         location.href = "page-under-construction.html";
     };
     document.getElementById("CA").onclick = function () {
+        location.href = "page-under-construction.html";
+    };
+    document.getElementById("ROF").onclick = function () {
         location.href = "page-under-construction.html";
     };
 
