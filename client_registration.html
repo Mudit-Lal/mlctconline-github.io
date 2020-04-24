@@ -3,7 +3,6 @@
 
 <head>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
 </script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -36,7 +35,7 @@
   <link href="css/custom.css" rel="stylesheet">
 </head>
 
-<body onload="recaptcha()">
+<body>
     <!-- Body Inner -->
 
     <div class="call-to-action call-to-action-gradient fullscreenreg" style="margin: auto;">
@@ -53,7 +52,7 @@
         <section id="page-title" data-bg-parallax="images/parallax/client_registration.jpg" class="fullscreen" >
         <div class="container" id="form">
           <div>
-            <script type="text/javascript">var submitted=false;</script>
+            <script type="text/javascript"></script>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='https://mudit-lal.github.io/mlctconline.github.io/page-under-construction.html';}"></iframe>
             <div class="container">
                 <div class="row">
@@ -64,21 +63,24 @@
                               <p class="text-muted">Enter your details precisely and carefully.</p> </center>
                           </div>
                           <div class="card-body">
-                              <form name="client_registration" method="post" target="hidden_iframe" id="form1" class="form-validate" onsubmit="submitted=true;" novalidate="novalidate" action="https://docs.google.com/forms/u/6/d/e/1FAIpQLSf1hNFYc1LZmopMWMQkZuQSsuO7JqHPxGDAV8yndOk50i3G2A/formResponse">
+                              <form name="client_registration" method="post" target="hidden_iframe" id="form1" class="form-validate" onsubmit="return finalvalidate()" novalidate="novalidate" action="https://docs.google.com/forms/u/6/d/e/1FAIpQLSf1hNFYc1LZmopMWMQkZuQSsuO7JqHPxGDAV8yndOk50i3G2A/formResponse">
                                   <div class="form-row">
                                       <div class="form-group col-md-6">
                                           <label for="name">Full Name</label>
-                                          <input type="text" class="form-control" name="entry.2005620554" placeholder="Enter your Full Name" required="">
+                                          <input type="text" class="form-control" name="entry.2005620554" placeholder="Enter your Full Name" required>
                                       </div>
                                       <div class="form-group col-md-6">
                                           <label for="surname">Father's Name</label>
-                                          <input type="text" class="form-control" name="entry.1034887896" placeholder="Enter your Father's Name" required="">
+                                          <input type="text" class="form-control" name="entry.1034887896" placeholder="Enter your Father's Name" required>
                                       </div>
                                   </div>
                                   <div class="form-row">
                                       <div class="form-group col-md-6">
-                                          <label for="telephone">Phone Number</label>
-                                          <input class="form-control" type="tel" name="entry.1166974658" placeholder="Enter your Mobile number" required="">
+                                        <label for="telephone">Phone Number</label>
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text" id="basic-addon1">+91</span>
+
+                                        <input type="text" class="form-control" name="entry.1166974658" placeholder="Enter Phone Number here" aria-label="phno" aria-describedby="basic-addon1"></div>
                                       </div>
                                       <div class="form-group col-md-6">
                                           <label for="email">Email ID</label>
@@ -89,19 +91,19 @@
                                   <div class="form-row">
                                       <div class="form-group col-md-6">
                                           <label for="localaddress">Address</label>
-                                          <input type="text" class="form-control" name="entry.1065046570" placeholder="Enter your Local Address" required="">
+                                          <input type="text" class="form-control" name="entry.1065046570" placeholder="Enter your Local Address" required>
                                       </div>
                                       <div class="form-group col-md-6">
-                                          <label for="localZIP">ZIP Code</label>
-                                          <input type="text" class="form-control" name="entry.1433379652" placeholder="Ented Area PIN Code" required="">
+                                          <label for="localZIP">PIN Code</label>
+                                          <input type="text" class="form-control" name="entry.963508831" placeholder="Ented Area PIN Code" required>
                                       </div>
                                       <div class="form-group col-md-6">
                                           <label for="localcity">City</label>
-                                          <input type="text" class="form-control" name="entry.107521294" placeholder="Enter City" required="">
+                                          <input type="text" class="form-control" name="entry.107521294" placeholder="Enter City" required>
                                       </div>
                                       <div class="form-group col-md-6">
                                           <label for="localstate">State</label>
-                                          <select class="form-control" name="" required="">
+                                          <select class="form-control" name="entry.540786343" required>
                                               <option selected value="">Click on me to select</option>
                                               <option value="Andhra Pradesh">Andhra Pradesh</option>
                                               <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -146,19 +148,19 @@
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
                                                 <label for="permaddress">Address</label>
-                                                <input type="text" class="form-control" name="" placeholder="Enter your Permanent Address" required="">
+                                                <input type="text" class="form-control" name="entry.2024033881" placeholder="Enter your Permanent Address" required>
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <label for="permZIP">ZIP Code</label>
-                                                <input type="text" class="form-control" name="" placeholder="Ented Area PIN Code" required="">
+                                                <label for="permZIP">PIN Code</label>
+                                                <input type="text" class="form-control" name="entry.1832075964" placeholder="Ented Area PIN Code" required>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label for="permcity">City</label>
-                                                <input type="text" class="form-control" name="" placeholder="Enter City" required="">
+                                                <input type="text" class="form-control" name="entry.769857850" placeholder="Enter City" required>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label for="permstate ">State</label>
-                                                <select class="form-control" name="" required="">
+                                                <select class="form-control" name="entry.494308257" required>
                                                     <option selected value="">Click on me to select</option>
                                                     <option value="Andhra Pradesh">Andhra Pradesh</option>
                                                     <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -203,7 +205,7 @@
                                   <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="gender">Click on me to select</label>
-                                        <select class="form-control" name="entry.2138931607" required="">
+                                        <select class="form-control" name="entry.2138931607" required>
                                             <option value="">Organisation Type</option>
                                             <option>Individual / Proprietor</option>
                                             <option>Partnership Firm</option>
@@ -212,37 +214,37 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="name">Firm Name / Company Name</label>
-                                        <input type="text" class="form-control" name="entry.974901662" placeholder="Enter the Firm Name / Company Name" required="">
+                                        <input type="text" class="form-control" name="entry.974901662" placeholder="Enter the Firm Name / Company Name" required>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="address">Business / Profession / Service</label>
-                                        <input type="text" class="form-control" name="entry.2076835508" placeholder="Enter details here" required="">
+                                        <input type="text" class="form-control" name="entry.2076835508" placeholder="Enter details here" required>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="address">Current/Savings Account Number</label>
-                                        <input type="text" class="form-control" name="entry.243576081" placeholder="Enter Account Number" required="">
+                                        <input type="text" class="form-control" name="entry.243576081" placeholder="Enter Account Number" required>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="address">Bank Name</label>
-                                        <input type="text" class="form-control" name="entry.585037455" placeholder="Enter Your Bank Name" required="">
+                                        <input type="text" class="form-control" name="entry.585037455" placeholder="Enter Your Bank Name" required>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="address">IFSC Code</label>
-                                        <input type="text" class="form-control" name="entry.50622459" placeholder="Enter IFSC Code" required="">
+                                        <input type="text" class="form-control" name="entry.50622459" placeholder="Enter IFSC Code" required>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="address">PAN Number</label>
-                                        <input type="text" class="form-control" name="entry.839337160" placeholder="Enter PAN Number" required="">
+                                        <input type="text" class="form-control" name="entry.839337160" placeholder="Enter PAN Number" required>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="address">Adhaar UID Number</label>
-                                        <input type="text" class="form-control" name="entry.1688532346" placeholder="Enter Adhaar UID Number" required="">
+                                        <input type="text" class="form-control" name="entry.1688532346" placeholder="Enter Adhaar UID Number" required>
                                     </div>
                                     </div>
                                   <div class="form-group">
                                       <div class="custom-control custom-checkbox">
-                                          <input type="checkbox" name="terms_conditions" id="terms_conditions" class="custom-control-input" value="1" required="">
-                                          <label class="custom-control-label" for="terms_conditions">By checking this option, you agree to accept the <a href="#">Terms and Conditions</a>.</label>
+                                          <input type="checkbox" name="terms" id="terms_conditions" class="custom-control-input" value="1" required>
+                                          <label class="custom-control-label" for="terms_conditions" name="agree">By checking this option, you agree to accept the <a href="#">Terms and Conditions</a>.</label>
                                       </div>
                                   </div>
                                   <div class="g-recaptcha" data-sitekey="6LdoTOwUAAAAAPoidMXWGt3raE9z8p0qv4R9O1K4"></div>
@@ -264,6 +266,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/plugins.js"></script>
     <!--Template functions-->
+
+    <script src="js/custom.js"></script>
     <script src="js/functions.js"></script>
 
 </html>
