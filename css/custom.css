@@ -6,6 +6,13 @@
  <link href="css/custom.css" rel="stylesheet">
 
 */
+.confetti {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 .rainbow-text {
   background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
   background-size: 800% 800%;
