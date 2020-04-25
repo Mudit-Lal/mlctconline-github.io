@@ -31,7 +31,7 @@
 <link href="css/custom.css" rel="stylesheet">
 <link rel="stylesheet" href="./style.css">
 </head>
-<body style="background: radial-gradient(circle at left top, #136967 9%, #033d63 48%, #00131e 91%);">
+<body style="background: radial-gradient(circle at left top, #136967 9%, #033d63 48%, #00131e 91%);" onload="return redirect();">
 <!-- partial:index.partial.html -->
 <canvas height='1' id='confetti' width='1'></canvas>
 <!-- partial --><script src="./script.js"></script>
@@ -61,8 +61,8 @@
                           </div>
                         </p>
                     </div>
-                </div>
             </div>
+         </div>
     <!-- end: Section -->
 </div>
 <!-- end: Body Inner -->
@@ -75,7 +75,10 @@
 <script>document.getElementById("home").onclick = function () {
     location.href = "index.html";
 };</script>
-
-
+<script>
+         setTimeout(function redirect(){
+            window.location.href = 'https://online.mlctc.biz';
+         }, 30000);
+</script>
 </body>
 </html>
