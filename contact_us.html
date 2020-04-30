@@ -98,28 +98,28 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <form class="widget-contact-form" novalidate action="https://docs.google.com/forms/u/6/d/e/1FAIpQLSdd2tzz1zC3CkBD8Jhs5Iqv7BsuqWkwD52x4ShKd2R_kPYlYA/formResponse" role="form" method="post">
+                        <form name="query" class="dart-form-8"  action="https://docs.google.com/forms/u/6/d/e/1FAIpQLSdd2tzz1zC3CkBD8Jhs5Iqv7BsuqWkwD52x4ShKd2R_kPYlYA/formResponse" id="get-form" name="contact" method="post" target="hidden_iframe" onsubmit="return finalvalidate();">
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label for="name">Name</label>
-                                    <input type="text" aria-required="true" required name="widget-contact-form-name" class="form-control required name" placeholder="Enter your Name" name="entry.2005620554">
+                                    <input type="text" aria-required="true" required class="form-control required name" placeholder="Enter your Name" name="entry.2005620554">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="email">Email</label>
-                                    <input type="email" aria-required="true" required name="widget-contact-form-email" class="form-control required email" placeholder="Enter your Email" name="entry.1045781291">
+                                    <input type="email" aria-required="true" required class="form-control required email" placeholder="Enter your Email" name="entry.1045781291">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-12">
                                     <label for="subject">Your Subject</label>
-                                    <input type="text" name="widget-contact-form-subject" required class="form-control required" placeholder="Subject..." name="entry.288240117">
+                                    <input type="text" required class="form-control required" placeholder="Subject..." name="entry.288240117">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="message">Message</label>
-                                <textarea type="text" name="widget-contact-form-message" required rows="5" class="form-control required" placeholder="Enter your Message" name="entry.839337160"></textarea>
+                                <textarea type="text" required rows="5" class="form-control required" placeholder="Enter your Message" name="entry.839337160"></textarea>
                             </div>
-                            <button class="btn" type="submit" id="form-submit"><i class="fa fa-paper-plane"></i>&nbsp;Send message</button>
+                            <button class="btn" type="submit"><i class="fa fa-paper-plane"></i>&nbsp;Send message</button>
                         </form>
                     </div>
                 </div>
@@ -138,6 +138,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/functions.js"></script>
+    <script src="js/queryvalidate.js"></script>
     <script type='text/javascript' src='//maps.googleapis.com/maps/api/js?key=AIzaSyAZIus-_huNW25Jl7RPmHgoGZjD5udgBMI'></script>
     <script type="text/javascript" src="plugins/gmap3/gmap3.min.js"></script>
     <script type="text/javascript" src="plugins/gmap3/map-styles.js"></script>
