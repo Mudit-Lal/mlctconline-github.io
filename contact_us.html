@@ -91,7 +91,7 @@
                                 <li class="social-linkedin"><a href="#"><i class="fab fa-linkedin"></i></a></li>
                             </ul>
                         </div>-->
-                    </div>
+                    </div><iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='https://mudit-lal.github.io/mlctconline.github.io/thankyou_querysubmitted.html';}"></iframe>
                     <div class="col-lg-6">
                         <form name="query" class="dart-form-8"  action="https://docs.google.com/forms/u/6/d/e/1FAIpQLSdd2tzz1zC3CkBD8Jhs5Iqv7BsuqWkwD52x4ShKd2R_kPYlYA/formResponse" id="get-form" name="contact" method="post" target="hidden_iframe" onsubmit="return finalvalidate();">
                             <div class="row">
@@ -137,6 +137,41 @@
     <script type='text/javascript' src='//maps.googleapis.com/maps/api/js?key=AIzaSyAZIus-_huNW25Jl7RPmHgoGZjD5udgBMI'></script>
     <script type="text/javascript" src="plugins/gmap3/gmap3.min.js"></script>
     <script type="text/javascript" src="plugins/gmap3/map-styles.js"></script>
+    <script type="text/javascript">
+    var submitted=false;
+    function clientvalidateForm() {
+        var fullname = document.forms["query"]["entry.2005620554"].value;
+        var phno = document.forms["query"]["entry.288240117"].value;
+        var email = document.forms["query"]["entry.1045781291"].value;
+        var emailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (fullname == "") {
+            alert("Full name must be filled out");
+            return false;
+          }
+          if (phno == "") {
+            alert("Subject must be filled out");
+            return false;
+          }
+
+          if (emailformat.test(email) == false)
+          {
+                alert('Invalid Email Address');
+                return false;
+          }
+    }
+
+    function finalvalidate(){
+      if(clientvalidateForm() == false)
+      {
+        submitted=false;
+      }
+      else{
+            submitted=true;
+          }
+        }
+
+    </script>
 </body>
 
 </html>
