@@ -51,7 +51,8 @@
             </div>
         </header>
         <!-- end: Header -->
-        <!-- Google Map --><iframe  class ="fullscreen-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.5607133840526!2d80.94792231512028!3d26.85392098315297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0c20c8e915%3A0x7f29857c973c611d!2sManoj%20Lal%20Advocate!5e0!3m2!1sen!2sin!4v1587914782357!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <!-- Google Map -->
+        <iframe  class ="fullscreen-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.5607133840526!2d80.94792231512028!3d26.85392098315297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0c20c8e915%3A0x7f29857c973c611d!2sManoj%20Lal%20Advocate!5e0!3m2!1sen!2sin!4v1587914782357!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <!-- end: Google Map -->
         <!-- CONTENT -->
         <section>
@@ -93,29 +94,35 @@
                         </div>-->
                     </div><iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='https://mudit-lal.github.io/mlctconline.github.io/thankyou_querysubmitted.html';}"></iframe>
                     <div class="col-lg-6">
-                        <form name="query" class="dart-form-8"  action="https://docs.google.com/forms/u/6/d/e/1FAIpQLSdd2tzz1zC3CkBD8Jhs5Iqv7BsuqWkwD52x4ShKd2R_kPYlYA/formResponse" id="get-form" name="contact" method="post" target="hidden_iframe" onsubmit="return finalvalidate();">
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label for="name">Name</label>
-                                    <input type="text" aria-required="true" required class="form-control required name" placeholder="Enter your Name" name="entry.2005620554">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="email">Email</label>
-                                    <input type="email" aria-required="true" required class="form-control required email" placeholder="Enter your Email" name="entry.1045781291">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col-md-12">
-                                    <label for="subject">Your Subject</label>
-                                    <input type="text" required class="form-control required" placeholder="Subject..." name="entry.288240117">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea type="text" required rows="5" class="form-control required" placeholder="Enter your Message" name="entry.839337160"></textarea>
-                            </div>
-                            <button class="btn" type="submit"><i class="fa fa-paper-plane"></i>&nbsp;Send message</button>
-                        </form>
+                      <form class="widget-contact-form" novalidate action="include/contact-form.php" role="form" method="post">
+                          <div class="row">
+                              <div class="form-group col-md-6">
+                                  <label for="name">Name</label>
+                                  <input type="text" aria-required="true" name="widget-contact-form-name" required class="form-control required name" placeholder="Enter your Name">
+                              </div>
+                              <div class="form-group col-md-6">
+                                  <label for="email">Email</label>
+                                  <input type="email" aria-required="true" name="widget-contact-form-email" required class="form-control required email" placeholder="Enter your Email">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="form-group col-md-12">
+                                  <label for="subject">Your Subject</label>
+                                  <input type="text" name="widget-contact-form-subject" required class="form-control required" placeholder="Subject...">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="message">Message</label>
+                              <textarea type="text" name="widget-contact-form-message" required rows="5" class="form-control required" placeholder="Enter your Message"></textarea>
+                          </div>
+
+<br/>
+                          <div class="form-group">
+                              <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                              <div class="g-recaptcha" data-sitekey="6Ld4XfsUAAAAAEpp_GPNDkULS7BN3q26fHOX6WmI"></div>
+                          </div>
+                          <button class="btn" type="submit" id="form-submit"><i class="fa fa-paper-plane"></i>&nbsp;Send message</button>
+                      </form>
                     </div>
                 </div>
             </div>
@@ -172,6 +179,8 @@
         }
 
     </script>
+    <script type='text/javascript' src='//maps.googleapis.com/maps/api/js?key=AIzaSyBmZahntHeQFBohYqLCdwZK80nm6rEY1fE'></script>
+    <script type="text/javascript" src="plugins/gmap3/gmap3.min.js"></script>
 </body>
 
 </html>

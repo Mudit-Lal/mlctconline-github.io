@@ -17,7 +17,7 @@ $mail = new PHPMailer();
 $to = "muditlal02@gmail.com";
 
 // Add your reCaptcha Secret key if you wish to activate google reCaptcha security
-$recaptcha_secret_key = '';
+$recaptcha_secret_key = '6Ld4XfsUAAAAAPXQhKS1sP1-RmYZgd1SzKaXvdyK';
 
 //This functionality will process post fields without worrying to define them on your html template for your customzied form.
 //Note: autofields will process only post fields that starts with name widget-contact-form OR with custom prefix field name
