@@ -3,12 +3,10 @@
 <html>
     <head><title>How to send attachment in an email on form submission using PHP</title></head>
     <body>
-        
+
         <!-- Display submission status -->
-<?php if(!empty($statusMsg)){ ?>
-    <p><?php echo $statusMsg; ?></p>
-<?php } ?>
- 
+
+
 <!-- Display contact form -->
 <form method="post" action="mailsend.php" enctype="multipart/form-data">
     <div class="form-group">
@@ -30,7 +28,7 @@
         <input type="submit" name="submit" class="btn" value="SEND MESSAGE">
     </div>
 </form>
- 
+
 </body>
- 
+
 </html>
